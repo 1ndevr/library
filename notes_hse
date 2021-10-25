@@ -1,0 +1,19 @@
+{
+"name": $("h3").textContent,
+"price": $("p").textContent,
+"quantity": 1,
+}
+
+dataLayer.push({
+  "event": "add_to_cat"
+  'ecommerce': {
+    'detail': {
+      'actionField': {'list': 'Apparel Gallery'},    // 'detail' actions have an optional list property.
+      'products': [{
+       "name": $("h3").textContent,
+       "price": $("p").textContent.substring(2),
+       "quantity": 1,
+}]
+     }
+   }
+});
